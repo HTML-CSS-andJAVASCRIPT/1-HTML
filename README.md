@@ -150,5 +150,31 @@ Botón radio
         <h3>¿Qué color te gusta?</h3>
         Verde <input type="radio" name="color" value="verde">
         Rojo <input type="radio" name="color" value="rojo">
+        <input type="submit" name="enviar" value= "Enviar datos">
+    </form>
+~~~
+
+# 8. Select - Selección de valores
+~~~html
+    <form action="resultado.html" method='get'>
+        <h3>Introduce la calidad de la imágen</h3>
+        <select name="calidad" id="">
+            <option value="1">Alta</option>
+            <option value="2">Media</option>
+            <option value="3">Baja</option>
+            <input type="submit" name="" value="Enviar datos">
+        </select>
+
+    </form>
+~~~
+
+# 9. Area de texto
+~~~html
+<form action="resultado.html" method="get"> <!--method="post" también envia el comentario pero no se ve en la url-->
+        <h3>Introduce tu comentario</h3>
+        <textarea name="comentario" id="" cols="100" rows="10"></textarea>
+        <input type="submit"value="Enviar comentario">
+
+
     </form>
 ~~~
