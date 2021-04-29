@@ -1,10 +1,23 @@
 # 1 HTML
 
+1. [Estructura básica ](#schema1)
+2. [Titulares, parrafos, negrita, italic y comentarios](#schema2)
+3. [Listas](#schema3)
+4. [span y div](#schema4)
+5. [Incluir una imagen y un enlace a otra página web](#schema5)
+6. [Tablas](#schema6)
+7. [Formularios](#schema7)
+8. [Select - Selección de valores](#schema8)
+9. [Area de texto](#schema9)
 
+<hr>
 
-
+<a name="schema1"></a>
 
 # 1.Estructura básica
+
+~~~html
+
 `DOCTYPE` Tipo de documento, html
 ~~~html
 <!DOCTYPE html>
@@ -27,7 +40,9 @@
 </body>
 </html>
 ~~~
+<hr>
 
+<a name="schema2"></a>
 
 # 2. Titulares, parrafos, negrita, italic y comentarios
 Lo título va desde `h1` hasta el `h6`, el unos es que mayor letra tiene el 6 el más pequeño
@@ -48,6 +63,9 @@ Cursiva
 ~~~html
 <P> <i>Párrafo</i> 2</P>
 ~~~
+<hr>
+
+<a name="schema3"></a>
 
 # 3. Listas
 
@@ -67,6 +85,11 @@ Cursiva
         <li>Naranja</li>
     </ul>
 ~~~
+
+<hr>
+
+<a name="schema4"></a>
+
 # 4. span y div
 `span` aplicamos un fortmato
 ~~~html
@@ -79,7 +102,9 @@ Cursiva
         <p>Color azul</p>
     </div>
 ~~~
+<hr>
 
+<a name="schema5"></a>
 
 # 5.Incluir una imagen y un enlace a otra página web
 
@@ -98,6 +123,9 @@ Una imágen que cuando clicamos en ella nos lleva a una paǵina web
     <img src="./images/marvel.jpeg" alt="Logo Marvel"/>
 </a>
 ~~~
+<hr>
+
+<a name="schema6"></a>
 
 # 6. Tablas
 `tr` filas 
@@ -129,6 +157,10 @@ Una imágen que cuando clicamos en ella nos lleva a una paǵina web
 </table>
 ~~~
 
+<hr>
+
+<a name="schema7"></a>
+
 # 7. Formularios
 Si ponemos tipos `emial`, si no escribes bien un emial da error
 y la `password` no se muestra.
@@ -154,6 +186,10 @@ Botón radio
     </form>
 ~~~
 
+<hr>
+
+<a name="schema8"></a>
+
 # 8. Select - Selección de valores
 ~~~html
     <form action="resultado.html" method='get'>
@@ -167,10 +203,15 @@ Botón radio
 
     </form>
 ~~~
+<hr>
+
+<a name="schema9"></a>
 
 # 9. Area de texto
+`method="post"` también envia el comentario pero no se ve en la url
+
 ~~~html
-<form action="resultado.html" method="get"> <!--method="post" también envia el comentario pero no se ve en la url-->
+<form action="resultado.html" method="get"> 
         <h3>Introduce tu comentario</h3>
         <textarea name="comentario" id="" cols="100" rows="10"></textarea>
         <input type="submit"value="Enviar comentario">
